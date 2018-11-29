@@ -9,3 +9,10 @@ export const getRouterReq = (access) => {
     method: 'get'
   })
 }
+
+export const getVersion = () => {
+  return axios.request({
+    url: '9527/version',
+    method: 'get'
+  })
+}

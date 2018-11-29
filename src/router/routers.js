@@ -59,6 +59,25 @@ export default [
     }
   },
   {
+    path: '/mo',
+    name: 'mo',
+    component: Main,
+    meta: {
+      notCache: true
+    },
+    children: [
+      {
+        path: '/mo/m',
+        name: 'mom',
+        meta: {
+          title: 'testpage',
+          notCache: true
+        },
+        component: () => import('@/view/modal/mm')
+      }
+    ]
+  },
+  {
     path: '/multilevel',
     name: 'multilevel',
     meta: {
